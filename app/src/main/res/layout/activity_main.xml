@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="16dp"
+            android:fontFamily="casual"
+            android:text="Biodata Diri"
+            android:textColor="#0B0B0B"
+            android:textSize="20sp"
+
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edit_nama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:hint="Nama"
+            android:ems="10"
+            android:textColor="#0E0E0E"
+            android:textColorHint="#2196F3" />
+
+
+        <EditText
+            android:id="@+id/edit_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:textColor="#0E0E0E"
+            android:textColorHint="#2196F3"
+            android:layout_margin="16dp"/>
+
+        <EditText
+            android:id="@+id/edit_telepon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="No.Telepon"
+            android:textColor="#0E0E0E"
+            android:textColorHint="#2196F3"
+            android:layout_margin="16dp"
+            android:inputType="phone"/>
+
+        <EditText
+            android:id="@+id/edit_alamat"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:hint="Alamat"
+            android:textColor="#0E0E0E"
+            android:textColorHint="#2196F3"
+            android:layout_margin="16dp"
+            android:inputType="textMultiLine"/>
+
+
+        <Spinner
+            android:id="@+id/spinner_kelamin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="#0E0E0E"
+            android:entries="@array/jenis_kelamin"/>
+
+        <Button
+            android:id="@+id/button_simpan"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="SIMPAN"
+            android:textSize="18sp"
+            android:textColor="#ffffff"
+            android:inputType="textMultiLine"
+            android:background="@drawable/button_rounded"/>
+
+    </LinearLayout>
+</ScrollView>
